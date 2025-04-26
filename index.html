@@ -3,47 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assem Mohamed Saad Mohamed</title>
+    <title>Assem Mohamed Saad Mohamed - Portfolio</title>
     <style>
       body {
         font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
       }
-      .container {
+      header,
+      section,
+      footer {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        text-align: center;
+      }
+      hr {
+        border: none;
+        height: 2px;
+        background: #ddd;
+        margin: 20px 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      ul li {
+        margin-bottom: 10px;
+      }
+      .contact-links,
+      .social-links {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #f2f2f2;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 10px;
+      }
+      .social-links a {
+        text-decoration: none;
+        color: #0077b5;
+        font-weight: bold;
       }
       h1,
       h2,
-      h3,
-      h4 {
-        margin: 0;
+      h3 {
+        color: #333;
       }
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2rem;
-      }
-      h3,
-      h4 {
-        font-size: 1.5rem;
+      footer {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
       }
       a {
-        color: #007bff;
-        text-decoration: none;
-      }
-      .social-media a:hover {
-        text-decoration: underline;
+        color: #0077b5;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Assem Mohamed Saad Mohamed</h1>
+    <header>
+      <h1>Assem Mohamed Saad Mohamed</h1>
+      <div class="contact-links">
         <ul>
           <li><strong>Phone:</strong> +20 127 878 5473</li>
           <li>
@@ -53,69 +80,175 @@
             >
           </li>
         </ul>
-        <div class="social-media">
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/toyonix/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/ToYoNiX"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Github</a
+        >
+        <a
+          href="https://codeforces.com/profile/ToYoNix"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Codeforces</a
+        >
+        <a
+          href="https://leetcode.com/u/ToYoNiX/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LeetCode</a
+        >
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Hello! I am Assem, a third-year Computer Science student at Misr
+        University for Science and Technology. With an enthusiasm for Linux and
+        open-source technologies, my primary interest lies in backend
+        development. My goal is to continue honing my skills and become a
+        proficient software engineer. Apart from academics, you can usually find
+        me leading events for our university's Google Developer Groups chapter
+        or experimenting with Linux projects.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>
+        Misr University for Science and Technology (September 2022 - July 2026)
+      </h3>
+      <ul>
+        <li>Computer Science</li>
+        <li>CGPA: 3.92 out of 4</li>
+        <li>
+          <a href="https://must.edu.eg/" target="_blank">University Website</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <h3>Google Developer Groups on Campus (September 2024 - Present)</h3>
+      <p>
+        Leader - Hybrid -
+        <a
+          href="https://gdg.community.dev/gdg-on-campus-misr-university-for-science-technology-6th-of-october-egypt/"
+          target="_blank"
+          >Website</a
+        >
+      </p>
+      <p>
+        As an On-Campus Community Leader, I help foster a sense of community
+        among students, faculty, and staff by planning events, building
+        relationships, providing support, resolving conflicts, promoting social
+        justice, and developing student leaders.
+      </p>
+
+      <h3>Must CPC</h3>
+      <ul>
+        <li>
+          <strong>Head of Coaches</strong> - Remote (March 2024 - September
+          2024)
+        </li>
+        <li>
+          Effectively managing the coaching team by assigning tasks, reviewing
+          content, and scheduling sessions.
+        </li>
+        <li>
+          <strong>Coding Instructor</strong> - Remote (July 2023 - September
+          2024)
+        </li>
+        <li>
+          Guiding newcomers through competitive programming and problem-solving.
+        </li>
+      </ul>
+
+      <h3>ECPC Finals (September 2024)</h3>
+      <p>Contestant, Abu Qir, Alexandria, Egypt</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Pharmacy Management System</strong> -
           <a
-            href="https://www.linkedin.com/in/toyonix/"
+            href="https://github.com/ToYoNiX/pharmacy-management-system"
             target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <span> · </span>
+            >Repository</a
+          ><br />
+          Full-stack app using Django, HTML, CSS, JavaScript, and SQLite for
+          managing pharmacies.
+        </li>
+
+        <li>
+          <strong>Airline Reservation System</strong> -
           <a
-            href="https://github.com/ToYoNiX"
+            href="https://github.com/ToYoNiX/airline-reservation-system"
             target="_blank"
-            rel="noopener noreferrer"
-            >Github</a
-          >
-          <span> · </span>
-          <a
-            href="https://codeforces.com/profile/ToYoNix"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Codeforces</a
-          >
-          <span> · </span>
-          <a
-            href="https://leetcode.com/u/ToYoNiX/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LeetCode</a
-          >
-        </div>
-      </header>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I am Assem, a third-year Computer Science student at Misr
-          University for Science and Technology. With an enthusiasm for Linux
-          and open-source technologies, my primary interest lies in backend
-          development. My goal is to continue honing my skills and become a
-          proficient software engineer. Apart from academics, you can usually
-          find me leading events for our university's Google Developer Groups
-          chapter or experimenting with Linux projects.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add project sections here -->
-      </section>
-      <section id="skills-languages">
-        <h2>Skills & Languages</h2>
-        <h3>Tools:</h3>
-        <ul>
-          <li>VSCode</li>
-          <li>Linux</li>
-          <li>Vim</li>
-          <li>Docker</li>
-        </ul>
-        <h3>Languages:</h3>
-        <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </section>
-    </div>
+            >Repository</a
+          ><br />
+          Full-stack app using Flask, HTML, CSS, JavaScript, and MS SQL Server
+          for airline bookings.
+        </li>
+
+        <li>
+          <strong>Awda</strong> -
+          <a href="https://github.com/ToYoNiX/awda" target="_blank"
+            >Repository</a
+          ><br />
+          A Flask-based app aiding in the search for missing individuals, with
+          HTML, CSS, JS, and SQLite.
+        </li>
+
+        <li>
+          <strong>CS50-Tasks</strong> -
+          <a href="https://github.com/ToYoNiX/cs50-tasks" target="_blank"
+            >Repository</a
+          ><br />
+          Task organizer web app using Flask, responsive HTML/CSS/JS, and SQLite
+          for data handling.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Tools:</strong> VSCode, Linux, Vim, Docker</li>
+        <li><strong>Languages:</strong> Python, Javascript, HTML, CSS</li>
+        <li><strong>Databases:</strong> MS Excel, MS Access, SQLite</li>
+        <li>
+          <strong>Research and Planning:</strong> Identifying issues, gathering
+          information, deriving insights, finding solutions, and presenting
+          effectively.
+        </li>
+        <li>
+          <strong>Organization Tools:</strong> Obsidian, Todoist, Zettelkasten
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>Arabic (Mother Language): Excellent</li>
+        <li>English (Second Language): Very Good</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Assem Mohamed Saad Mohamed</p>
+    </footer>
   </body>
 </html>
